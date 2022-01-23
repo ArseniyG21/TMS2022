@@ -13,11 +13,9 @@ public class Task1 {
     private static void printLiterals() {
 //        вывести на консоль литералы следующих видов:
 //        логический:
-        boolean test = (6 < 4);
-        if (test == false) {
-            System.out.println(false);
-        } else if (test == true) {
-            System.out.println(true);
+        boolean test = 6 < 4;
+        {
+            System.out.println(test);
         }
 
 //        строковый:
@@ -54,48 +52,51 @@ public class Task1 {
      **/
     public static int sum(int a, int b) {
         return a + b;
-       /* if (sum(a,b) > Integer.MAX_VALUE) {
-          //  return -1;*/
+        if (sum(a, b) > Integer.MAX_VALUE) {
+            return -1;
+        }
+
+
+        /**
+         * Метод должен вернуть максимальное значение из двух чисел
+         *
+         * <p>
+         * Example1:
+         * a = 4,
+         * b = 5
+         * <p>
+         * Метод должен вернуть 5
+         * Example2:
+         * a = 10,
+         * b = 10
+         * <p>
+         * Метод должен вернуть 10
+         */
+        public static int max ( int a, int b){
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }
+
+        }
+
+        /**
+         * Используя теорему Пифагора, вычислите значение гипотенузы. Квадрат гипотенузы = сумме квадратов катетов
+         * <p>
+         * Example1:
+         * 3
+         * 4
+         * return 5
+         * <p>
+         * Example2:
+         * 12
+         * 16
+         * return 20
+         */
+        public static double calculateHypotenuse ( int a, int b){
+            return Math.sqrt(a * a + b * b);
+        }
     }
 
-
-    /**
-     * Метод должен вернуть максимальное значение из двух чисел
-     *
-     * <p>
-     * Example1:
-     * a = 4,
-     * b = 5
-     * <p>
-     * Метод должен вернуть 5
-     * Example2:
-     * a = 10,
-     * b = 10
-     * <p>
-     * Метод должен вернуть 10
-     */
-    public static int max(int a, int b) {
-        if (a > b) {
-            return a;
-        } else return b;
-
-    }
-
-    /**
-     * Используя теорему Пифагора, вычислите значение гипотенузы. Квадрат гипотенузы = сумме квадратов катетов
-     * <p>
-     * Example1:
-     * 3
-     * 4
-     * return 5
-     * <p>
-     * Example2:
-     * 12
-     * 16
-     * return 20
-     */
-    public static double calculateHypotenuse(int a, int b) {
-        return Math.sqrt(a * a + b * b);
-    }
-}
 
