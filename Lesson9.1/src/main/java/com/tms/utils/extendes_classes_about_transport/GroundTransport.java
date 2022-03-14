@@ -8,7 +8,6 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
-
 public abstract class GroundTransport extends Transport {
     private int wheels;
     private int fuelConsumption;

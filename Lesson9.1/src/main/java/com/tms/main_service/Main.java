@@ -5,7 +5,6 @@ import com.tms.utils.extendes_classes_about_transport.about_air.Military;
 import com.tms.utils.extendes_classes_about_transport.about_ground.Cargo;
 import com.tms.utils.extendes_classes_about_transport.about_ground.PassengerTransport;
 
-
 public class Main {
     public static void main(String[] args) {
         CivilAirTransport civilAirTransport = CivilAirTransport.builder()
