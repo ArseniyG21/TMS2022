@@ -9,6 +9,7 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @AllArgsConstructor
 @SuperBuilder
+
 public abstract class Transport {
     private int HorsePower;
     private int maxSpeed;

@@ -8,6 +8,7 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
+
 public class Military extends Air {
     private boolean ejection;
     private int rocket;

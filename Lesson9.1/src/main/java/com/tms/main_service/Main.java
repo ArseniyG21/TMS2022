@@ -61,6 +61,5 @@ public class Main {
         passengerTransport.displayInfo();
         System.out.println();
         passengerTransport.getDistance(10);
-
     }
 }

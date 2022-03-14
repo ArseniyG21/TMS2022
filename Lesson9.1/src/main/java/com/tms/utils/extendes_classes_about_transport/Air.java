@@ -8,6 +8,7 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
+
 public abstract class Air extends Transport {
     private String wings;
     private double minimalRoadToFly;
