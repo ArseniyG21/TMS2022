@@ -8,7 +8,6 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @Setter
 @SuperBuilder
-
 public class CivilAirTransport extends Air {
     private int passengers;
     private boolean businessClass;
