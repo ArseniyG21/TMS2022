@@ -4,7 +4,6 @@ import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class Calculator {
-
 //         4)Написать класс Калькулятор (необобщенный), который содержит обобщенные статические методы - sum, multiply, divide,
 //         subtraction. Параметры этих методов - два числа разного типа, над которыми должна быть произведена операция.
 

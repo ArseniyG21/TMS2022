@@ -27,6 +27,7 @@ public class TextFormatter {
 //    Разбиваем текст на предложения. Используя методы класса Utils.TextFormatter определяем подходит ли нам предложение.
 //    Если подходит добавляем его в output.txt файл
 
+
     public static List<String> getSentences(String text) {
         List<String> strings = Arrays.asList(text.split(SPLIT_SENTENCES_REGEX));
         List<String> result = new ArrayList<>();
